@@ -15,9 +15,9 @@
 -   Update `application.properties` file
 
 ```
-spring.datasource.url=jdbc:postgresql://<external-database-url-no-user>:5432/recipes_i0pn
-spring.datasource.username=recipes_i0pn_user
-spring.datasource.password=password
+spring.datasource.url=jdbc:postgresql://<external-database-url-no-user>:<host>/<db-name>
+spring.datasource.username=<username>
+spring.datasource.password=<password>
 spring.jpa.hibernate.ddl-auto=update
 ```
 
