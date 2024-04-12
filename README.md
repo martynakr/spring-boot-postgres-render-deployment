@@ -1,5 +1,9 @@
 # Deploying a Spring Boot application with Render
 
+### Creating a Render account and authorizing Github
+
+### Creating Postgres database in Render
+
 ### Migrating from **mySQL** to **Postgress** database
 
 -   Remove mySql connector dependency and add postgres dependency
@@ -23,7 +27,7 @@ spring.jpa.hibernate.ddl-auto=update
 
 Test your endpoints with Postman so schema gets created
 
-## Before you push your code to Github, it is a good idea to put sensitive data in `.env` file
+### Moving sensitive data to `.env` file
 
 -   Create `.env` in the root project folder
 -   Use all uppercase snake case convention for naming your variables, for example
