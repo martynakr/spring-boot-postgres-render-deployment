@@ -108,13 +108,13 @@ Push your updated code to Github
 
 -   Go back to Render `Dashboard` and select `New +` -> `Web Service`
 
-![Creating new Web Service](./images/render_creating_new_webservice.png)
+![Creating new Web Service](./images/)
 
 -   Select `Build and deploy from Git repository`
 
 ![From Git repository](./images/render_deploy_from_git.png)
 
--   Select a repository you want to deploy from the lost or paste a url to a public repository if not on the list
+-   Select a repository you want to deploy from the list or paste a url to a public repository if not on the list
 
 ![Repository list](./images/render_select_repository_to_deploy_from.png)
 
@@ -131,7 +131,7 @@ Just like with the database setup, make sure to select **Free Instance Type** if
 ![Adding data from .env file](./images/render_add_env_variables_btn.png)
 ![Pasting data from `env` file](./images/render_adding_env_variables.png)
 
--   **IMPORTANT** AT this point you will need to update the value of the `DB_DATASOURCE` variable. Both the app and the database will be running on Render which means you should be using the INTERNAL DATABASE URL instead of the EXTERNAL one
+-   **IMPORTANT!** At this point you will need to update the value of the `DB_DATASOURCE` variable. Both the app and the database will be running on Render which means you should be using the INTERNAL DATABASE URL instead of the EXTERNAL one
 
 Your internal url should look something like this:
 
