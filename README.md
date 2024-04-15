@@ -11,10 +11,12 @@
 ### Create a Postgres database in Render
 
 -   Click `New +` button in the top navbar and then `PostgreSQL`
-    ![New PostgreSQL db](./images/render_add_new_postgres.png)
+
+![New PostgreSQL db](./images/render_add_new_postgres.png)
 
 -   Fill out all the required fields
-    ![Database form](./images/render_db_details.png)
+
+![Database form](./images/render_db_details.png)
 
 **If you don't want to get charged make sure to select Free Instance Type**
 
@@ -105,10 +107,12 @@ Push your updated code to Github
 ### Deploy code from Github on Render
 
 -   Go back to Render `Dashboard` and select `New +` -> `Web Service`
-    ![Creating new Web Service](./images/render_creating_new_webservice.png)
+
+![Creating new Web Service](./images/render_creating_new_webservice.png)
 
 -   Select `Build and deploy from Git repository`
-    ![From Git repository](./images/render_deploy_from_git.png)
+
+![From Git repository](./images/render_deploy_from_git.png)
 
 -   Select a repository you want to deploy from the lost or paste a url to a public repository if not on the list
 
@@ -146,7 +150,8 @@ so it should match the format `jdbc:postgresql://<hostname>:<host>/db_name`
 -   Once all your variables are added, select `Create Web Service`
 
 -   Deployment will start automatically
-    ![Deployment](./images/render_deployment_started.png)
+
+![Deployment](./images/render_deployment_started.png)
 
 -   Once it's finished, `Building...` will be replaced with `Live`, you will also see a url to access your API
 
@@ -167,6 +172,7 @@ https://spring-boot-postgres-render-deployment.onrender.com/recipes
 -   Use the regular bug fixing strategies - research, time-boxing, reaching out to the coaches and your peers for help
 
 -   Once your code is fixed, push it to Github, then manually redeploy from the latest commit
-    ![Manual redeploy](./images/render_redeploy.png)
+
+![Manual redeploy](./images/render_redeploy.png)
 
 You can also look into setting up CI/CD
