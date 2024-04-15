@@ -1,6 +1,6 @@
 # Deploying a Spring Boot application with Render
 
-### Create a Render account and authorize Github
+## Create a Render account and authorize Github
 
 -   Go to [Render dashboard](https://dashboard.render.com/register?next=%2F) and create an account
 -   Once singed in, click on the down arrow in the top right corner and navigate to `Account settings`
@@ -8,7 +8,7 @@
 
 ![Connecting Github Account](./images/render_connect_github.png)
 
-### Create a Postgres database in Render
+## Create a Postgres database in Render
 
 -   Click `New +` button in the top navbar and then `PostgreSQL`
 
@@ -24,7 +24,7 @@
 
 ![Connection details](./images/render_postgres_connection_details.png)
 
-### Migrate your Spring app from **MySQL** to **Postgres** database
+## Migrate your Spring app from **MySQL** to **Postgres** database
 
 -   Remove MySQL connector dependency and add Postgres dependency
 
@@ -61,7 +61,7 @@ jdbc:postgresql://n1B5i8ZJqOLuAXrLz5KOqHhjbdfbeg589KZ@dpg-csbjgbbktjm4es789rricg
 
 Test your endpoints with Postman so schema gets created
 
-### Move sensitive data to `.env` file
+## Move sensitive data to `.env` file
 
 -   Create `.env` in the root project folder
 -   Use all uppercase snake case convention for naming your variables, for example
@@ -84,7 +84,7 @@ spring.datasource.password=${DB_PASSWORD}
 
 Don't forget to add `.env` to `.gitignore` file
 
-### Create a Dockerfile
+## Create a Dockerfile
 
 Render does not support Java environment by default, so you will need to use a Dockerfile to deploy your project
 
@@ -104,7 +104,7 @@ ENTRYPOINT [ "java", "-jar", "<your_app_name>.jar" ]
 
 Push your updated code to Github
 
-### Deploy code from Github on Render
+## Deploy code from Github on Render
 
 -   Go back to Render `Dashboard` and select `New +` -> `Web Service`
 
@@ -163,7 +163,7 @@ You can test your API in Postman, just make sure to add your endpoint to the URL
 https://spring-boot-postgres-render-deployment.onrender.com/recipes
 ```
 
-### Deployment failed - what should you do
+## Deployment failed - what should you do
 
 -   In a situation where your deployment is not successful, the most important thing would be to check the logs and read error messages
 
