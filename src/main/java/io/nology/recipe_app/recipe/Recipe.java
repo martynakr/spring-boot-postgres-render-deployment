@@ -24,6 +24,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Recipe {
+    
+    @Getter
     @Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
