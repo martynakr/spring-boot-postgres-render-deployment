@@ -108,7 +108,7 @@ Push your updated code to Github
 
 -   Go back to Render `Dashboard` and select `New +` -> `Web Service`
 
-![Creating new Web Service](./images/)
+![Creating new Web Service](./images/render_new_web-service.png)
 
 -   Select `Build and deploy from Git repository`
 
