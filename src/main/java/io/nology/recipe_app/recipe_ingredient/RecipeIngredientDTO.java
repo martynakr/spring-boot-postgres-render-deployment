@@ -1,9 +1,13 @@
 package io.nology.recipe_app.recipe_ingredient;
 
 import jakarta.validation.constraints.NotBlank;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+@AllArgsConstructor
+@NoArgsConstructor
 public class RecipeIngredientDTO {
     
     @Getter
@@ -20,5 +24,7 @@ public class RecipeIngredientDTO {
     @Setter
     @NotBlank
     private String unit;
+
+
 
 }
