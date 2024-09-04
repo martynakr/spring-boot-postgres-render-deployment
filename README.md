@@ -90,6 +90,7 @@ Render does not support Java environment by default, so you will need to use a D
 
 -   Create a file called `Dockerfile` in the root folder of your project and add the follwoing content:
 
+**For Java 17:**
 ```Dockerfile
 FROM maven:3-openjdk-17 AS build
 COPY . .
@@ -101,7 +102,19 @@ EXPOSE 8080
 
 ENTRYPOINT [ "java", "-jar", "<your_app_name>.jar" ]
 ```
+**For Java 21:**
+```Dockerfile
+ROM maven:3.9.8-eclipse-temurin-21 AS build
+COPY . .
+RUN mvn clean package -DskipTests
 
+FROM openjdk:21
+COPY --from=build /target/<you_app_name>-0.0.1-SNAPSHOT.jar <your_app_name>.jar
+EXPOSE 8080
+
+ENTRYPOINT [ "java", "-jar", "<your_app_name>.jar" ]
+
+```
 Push your updated code to Github
 
 ## Deploy code from Github on Render
